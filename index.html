@@ -3,14 +3,55 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<!-- Added link to the jQuery Library -->
+	<!-- Link to the jQuery Library -->
   	<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
-  	<!-- Added link to local script -->
+  	<!-- Link to local script -->
   	<script src="assets/javascript/game.js"></script>
-	<!-- Added a link to Bootstrap-->
+	<!-- Link to Bootstrap CDN-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
 <body>
-	
+	<header class="jumbotron">
+		<h1>Crystal Collector!</h1>
+	</header>
+	<main class="container">
+		<section class="instructions">
+			<article id="ccmac">
+				
+			</article>
+		</section>
+		<section class="gameboard">
+			<div class="row" id="row1">
+				<div class="rando">
+					<h4>Target Number:</h4>
+					<div id="rando"></div>
+				</div>
+				<div class="scoreboard">
+					<h4>Your Total Score:</h4>
+					<div id="score"></div>
+				</div>
+			</div>
+			<div class="row jewels" id="row2">
+				<div class="red btn btn-danger">Ruby</div>
+				<div class="blue btn btn-primary">Sapphire</div>
+				<div class="yellow btn btn-warning">Topaz</div>
+				<div class="green btn btn-success">Emerald</div>
+			</div>
+			<div class="row" id="row4">
+				<div class="wins">
+					<h4>Wins</h4>
+					<div id="wins"></div>
+				</div>
+				<div class="losses">
+					<h4>Losses</h4>
+					<div id="losses">	
+					</div>
+				</div>
+			</div>
+			<div class="restart">
+				<div class="btn btn-info">Restart</div>
+			</div>
+		</section>
+	</main>
 </body>
 </html>
