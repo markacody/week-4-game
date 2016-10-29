@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Crystal Collector!</title>
 	<!-- Link to the jQuery Library -->
   	<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
   	<!-- Link to local script -->
   	<script src="assets/javascript/game.js"></script>
 	<!-- Link to Bootstrap CDN-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 	<header class="jumbotron">
@@ -17,39 +19,45 @@
 	<main class="container">
 		<section class="instructions">
 			<article id="ccmac">
-				
+				<h2>How to Play</h2>
+				<p>A game starts automatically or when you click Restart. A new game starts when you win or lose.</p>
+				<ul><li>At the start of each game, you are given a random Target Number between 19-120, Your Total Score is zero, and each crystal is assigned a randome value between 1 and 12.</li>
+				<li>The objective of the game is to match Your Total Score to the Target Number by "collecting" crystals.</li>
+				<li> Click a crystal (Ruby, Sapphire, Topaz, or Emerald) to add the value of the crystal to Your Total Score.</li>
+				<li>Pay attention! You won't know the value of the crystal until you click it the first time!</li>
+				</ul>
 			</article>
 		</section>
 		<section class="gameboard">
 			<div class="row" id="row1">
-				<div class="rando">
-					<h4>Target Number:</h4>
-					<div id="rando"></div>
+				<div class="col-sm-6">
+					<h4>Target Number</h4>
+					<div class="rando" id="rando"></div>
 				</div>
-				<div class="scoreboard">
-					<h4>Your Total Score:</h4>
-					<div id="score"></div>
+				<div class="col-sm-6">
+					<h4>Your Total Score</h4>
+					<div class="scoreboard" id="score">#</div>
 				</div>
 			</div>
-			<div class="row jewels" id="row2">
+			<div class="row jewels clearfix" id="row2">
 				<div class="red btn btn-danger">Ruby</div>
 				<div class="blue btn btn-primary">Sapphire</div>
 				<div class="yellow btn btn-warning">Topaz</div>
 				<div class="green btn btn-success">Emerald</div>
 			</div>
 			<div class="row" id="row4">
-				<div class="wins">
+				<div class="col-sm-6">
 					<h4>Wins</h4>
-					<div id="wins"></div>
+					<div class="wins" id="wins">#</div>
 				</div>
-				<div class="losses">
+				<div class="col-sm-6">
 					<h4>Losses</h4>
-					<div id="losses">	
+					<div class="losses" id="losses">#	
 					</div>
 				</div>
 			</div>
 			<div class="restart">
-				<div class="btn btn-info">Restart</div>
+				<div class="btn btn-info btn-block">Restart</div>
 			</div>
 		</section>
 	</main>

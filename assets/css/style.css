@@ -2,3 +2,35 @@ body {
 	font-family: Helvetica, san-serif;
 	font-size: 1.2em;
 }
+.gameboard {
+	background: #eee;
+	border: solid 3px gray;
+	border-radius: 10px;
+	padding: 1em;
+}
+.rando, .scoreboard, .wins, .losses {
+	font-size: 1.5em;
+	background: #fff;
+	border: solid 1px #ddd;
+	border-radius: 10px;
+	padding: .5em;
+	margin-bottom: .5em;
+}
+.jewels {
+	text-align: center;
+}
+article {
+	background: #444;
+	border: solid 1px #ddd;
+	border-radius: 10px;
+	padding-left: 1em;
+	padding-right: 1em;
+	margin-bottom: .5em;
+}
+
+.instructions h2, p, ul {
+	color: white;
+}
+.instructions p, ul {
+	font-size: 1.2em;
+}

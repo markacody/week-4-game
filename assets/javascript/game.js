@@ -11,12 +11,12 @@ function gameOn() {
         score = 0; 
         //generate a random number and display it on the page
         //assign random values to  buttons
-        rando = Math.floor(Math.random() * 120) + 1;
+        rando = Math.floor(Math.random() * 101) + 19;
         $("#rando").html(rando);
-        red = Math.floor(Math.random() * 19) + 1;
-        blue = Math.floor(Math.random() * 19) + 1;
-        yellow = Math.floor(Math.random() * 19) + 1;
-        green = Math.floor(Math.random() * 19) + 1;
+        red = Math.floor(Math.random() * 12) + 1;
+        blue = Math.floor(Math.random() * 12) + 1;
+        yellow = Math.floor(Math.random() * 12) + 1;
+        green = Math.floor(Math.random() * 12) + 1;
         // declare and initialize gametime toggle
         isGameOn = true;
         console.log(isGameOn);
@@ -27,7 +27,7 @@ function gameOn() {
         console.log("green = " + green);
         console.log("yellow = " + yellow);
         // start a new game on the UI by emptying the display.
-        $('#score').empty();
+        $('#score').html("0");
     } /* END GAME ON */
 	// listen for clicks on the buttons
     $('.red').on('click', function(){
